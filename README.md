@@ -30,7 +30,7 @@ Users should be able to:
 ### Screenshot
 
 ![Mobile design 375](./screenshots/mob-375x675.png)
-![IPad design 768](./screenshots/mob-375x675.png)
+![IPad design 768](./screenshots/ipad-768x1024)
 ![Web design](./screenshots/web.png)
 
 ### Links
