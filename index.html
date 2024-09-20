@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Four card feature section by Grimm-N</title>
+</head>
+
+<body>
+
+  <header class="card__header">
+    <h1 class="undertitle">Reliable, efficient delivery</h1>
+    <h2 class="main__title">Powered by Technology</h2>
+    <p class="title__text">Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
+  </header>
+
+  <main class="cards">
+
+    <div class="card__column">
+      <div class="card__item card__color--cyan" onclick="openModal('modal-supervisor')">
+        <h3 class="card__title">Supervisor</h3>
+        <p class="card__info">Monitors activity to identify project roadblocks</p>
+        <div class="card__icon">
+          <img class="card__icon_image" src="./images/icon-supervisor.svg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="card__column column--middle">
+      <div class="card__item card__color--red" onclick="openModal('modal-team-builder')">
+        <h3 class="card__title">Team Builder</h3>
+        <p class="card__info">Scans our talent network to create the optimal team for your project</p>
+        <div class="card__icon">
+          <img class="card__icon_image" src="./images/icon-team-builder.svg" alt="">
+        </div>
+      </div>
+      <div class="card__item card__color--yellow" onclick="openModal('modal-karma')">
+        <h3 class="card__title">Karma</h3>
+        <p class="card__info">Regularly evaluates our talent to ensure quality</p>
+        <div class="card__icon">
+          <img class="card__icon_image" src="./images/icon-karma.svg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="card__column">
+      <div class="card__item card__color--blue" onclick="openModal('modal-calculator')">
+        <h3 class="card__title">Calculator</h3>
+        <p class="card__info">Uses data from past projects to provide better delivery estimates</p>
+        <div class="card__icon">
+          <img class="card__icon_image" src="./images/icon-calculator.svg" alt="">
+        </div>
+      </div>
+    </div>
+    
+  </main>
+
+  <!-- MODAL pages-->
+<div id="modal-supervisor" class="card__modal modal__cyan">
+  <div class="modal__content border__cyan">
+    <span class="close__modal close__cyan" onclick="closeModal('modal-supervisor')">&times;</span>
+    <div class="modal__card__header">
+      <img class="modal__icon" src="./images/icon-supervisor.svg" alt="">
+      <h3 class="modal__title">Supervisor</h3>
+    </div>
+    <p>Keeps an eagle eye on everything, including the office plants. Loves finding roadblocks like they’re hidden treasures. Always ready with a plan, even if it’s just a coffee break. Thinks ‘multitasking’ means talking and drinking coffee at the same time. Never misses a chance to ‘supervise’ the snack situation. Can detect a meeting that should have been an email from a mile away.<br><br>
+      Believes in strong leadership and even stronger Wi-Fi signals. Will remind you that they told you so… but with a smile. Once rearranged the entire office seating plan just to get closer to the coffee machine.</p>
+  </div>
+</div>
+
+<div id="modal-team-builder" class="card__modal modal__red">
+  <div class="modal__content border__red">
+    <span class="close__modal close__red" onclick="closeModal('modal-team-builder')">&times;</span>
+    <div class="modal__card__header">
+      <img class="modal__icon" src="./images/icon-team-builder.svg" alt="">
+      <h3 class="modal__title">Team Builder</h3>
+    </div>
+    <p>Handpicks the best people for the job while balancing three coffee cups and a meeting invite. Can spot talent faster than you can say 'teamwork.' Knows how to build a team that works well and laughs even better. Always brings donuts to the first meeting. Likes to call team members ‘the dream team,’ even if they’re just here for the snacks.<br><br>
+      Once built a team so good, they accidentally started their own coffee club. Can unite even the most remote workers—thanks to caffeine and GIFs. Enjoys motivational speeches that rhyme. Believes the key to success is ‘team spirit’ and a solid playlist.</p>
+  </div>
+</div>
+
+<div id="modal-karma" class="card__modal modal__yellow">
+  <div class="modal__content border__yellow">
+    <span class="close__modal close__yellow" onclick="closeModal('modal-karma')">&times;</span>
+    <div class="modal__card__header">
+      <img class="modal__icon" src="./images/icon-karma.svg" alt="">
+      <h3 class="modal__title">Karma</h3>
+    </div>
+    <p>Keeps track of who’s been naughty or nice – just like Santa, but with deadlines. Evaluates your project’s karma and makes sure everyone gets what they deserve (mostly coffee). Believes in fairness, but won’t say no to a little bribery… in the form of snacks. Often refers to their decisions as ‘karmic justice’ with a wink. Once gave extra karma points to someone for making the best pun in a meeting.<br><br>
+      Keeps a secret stash of cookies for ‘good karma days.’ If you ask nicely, might even predict your next promotion. Takes bad jokes in stride, but not without a groan. Believes in ‘what goes around, comes around’... especially with coffee refills.</p>
+  </div>
+</div>
+
+<div id="modal-calculator" class="card__modal modal__blue">
+  <div class="modal__content border__blue">
+    <span class="close__modal close__blue" onclick="closeModal('modal-calculator')">&times;</span>
+    <div class="modal__card__header">
+      <img class="modal__icon" src="./images/icon-calculator.svg" alt="">
+      <h3 class="modal__title">Calculator</h3>
+    </div>
+    <p>Turns coffee into numbers, and numbers into magic. Forecasts delivery dates with more accuracy than a fortune teller. Loves crunching data so you don’t have to. May occasionally give unsolicited life advice along with project estimates. Once calculated how many pizzas it takes to keep a project team happy (it’s a lot).<br><br>
+      Known to deliver deadlines faster than anyone’s Wi-Fi. Might also calculate how much caffeine you need to survive the week. Will remind you that 'numbers don’t lie,' especially when it comes to lunch budgets. Has a spreadsheet for everything, even office jokes.</p>
+  </div>
+</div>
+   
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Grimm-N</a>.
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
