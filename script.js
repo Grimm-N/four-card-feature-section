@@ -6,7 +6,6 @@ function openModal(modalId) {
     document.getElementById(modalId).style.display = "none";
   }
   
-  // Закрытие по клику вне окна
   window.onclick = function(event) {
     var modals = document.getElementsByClassName('card__modal');
     for (let i = 0; i < modals.length; i++) {
