@@ -73,14 +73,13 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
   }
 
 /* HEADER */
 .card__header {
     text-align: center;    
     max-width: 32rem;
-    margin: 6rem auto 4.67rem;
+    margin: 5rem auto 2rem;
 }
 
 .undertitle {
