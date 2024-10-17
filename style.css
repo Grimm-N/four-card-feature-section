@@ -67,9 +67,13 @@ html, body {
     min-height: 100vh;
     line-height: 1.5;
     font-family: "Poppins", sans-serif;
-    font-size: 15px;
+    font-size: 0.9375rem;
     background-color: #f9f9f9;
     color: #a3a5ad;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
 /* HEADER */
@@ -95,10 +99,14 @@ html, body {
 
 /* CARDS */
 .cards {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
     justify-content: center;
     align-items: center;
+    gap: 2rem;
     margin: 2rem;
+    max-width: 76rem;
 }
 
 .card__item {
@@ -108,8 +116,27 @@ html, body {
     height: 100%;
     padding: 2.27rem;
     border-radius: 0.35rem;
-
     transition: transform 0.3s ease;
+}
+
+.card__item:nth-child(1) {
+    grid-column: 1; 
+    grid-row: 1 / span 2; 
+}
+
+.card__item:nth-child(2) {
+    grid-column: 2; 
+    grid-row: 1; 
+}
+
+.card__item:nth-child(3) {
+    grid-column: 2; 
+    grid-row: 2; 
+}
+
+.card__item:nth-child(4) {
+    grid-column: 3; 
+    grid-row: 1 / span 2; 
 }
 
 .card__item:hover {
@@ -133,29 +160,24 @@ html, body {
 /* BOX-SHADOW for each card */
 .card__color--cyan {
     border-top: 0.27rem solid #45d3d3;
-    box-shadow: 0 8px 8px rgba(2, 181, 194, 0.2); 
+    box-shadow: 0 0.5rem 0.5rem rgba(2, 181, 194, 0.2); 
 }
 
 .card__color--red {
     border-top: 0.27rem solid #e95252;
-    box-shadow: 0 8px 8px rgba(194, 2, 2, 0.2); 
+    box-shadow: 0 0.5rem 0.5rem rgba(194, 2, 2, 0.2); 
 }
 
 .card__color--yellow {
     border-top: 0.27rem solid #fcaf4a;
-    box-shadow: 0 8px 8px rgba(194, 104, 2, 0.2); 
-    margin-top: 2rem;
+    box-shadow: 0 0.5rem 0.5rem rgba(194, 104, 2, 0.2); 
 }
 
 .card__color--blue {
     border-top: 0.27rem solid #549df2;
-    box-shadow: 0 8px 8px rgba(2, 72, 194, 0.2); 
+    box-shadow: 0 0.5rem 0.5rem rgba(2, 72, 194, 0.2); 
 }
 
-/*Space between central cards */
-.column--middle {
-    margin: auto  2rem;
-}
 
 
 /* MODAL PAGES */
@@ -267,11 +289,64 @@ html, body {
     border-bottom: 0.4rem solid #549df2;
 }
 
-@media (max-width: 480px) {  
+@media (max-width: 74rem) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card__item:nth-child(1) {
+        grid-column: 1; 
+        grid-row: 1; 
+    }
+    
+    .card__item:nth-child(2) {
+        grid-column: 1; 
+        grid-row: 2; 
+    }
+    
+    .card__item:nth-child(3) {
+        grid-column: 2; 
+        grid-row: 1; 
+    }
+    
+    .card__item:nth-child(4) {
+        grid-column: 2; 
+        grid-row: 2; 
+    }
+}
+
+@media (max-width: 50.9rem) {
+    .cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+    }
+
+    .card__item:nth-child(1) {
+        grid-column: 1; 
+        grid-row: 1; 
+    }
+    
+    .card__item:nth-child(2) {
+        grid-column: 1; 
+        grid-row: 2; 
+    }
+    
+    .card__item:nth-child(3) {
+        grid-column: 1; 
+        grid-row: 3; 
+    }
+    
+    .card__item:nth-child(4) {
+        grid-column: 1; 
+        grid-row: 4; 
+    }
+}
+
+@media (max-width: 30rem) {  
 
     .card__header {
         max-width: 20rem;
-        margin: 4rem auto;
+        margin: 4rem 0 0;
     }
 
     .undertitle {
@@ -282,7 +357,6 @@ html, body {
     
     .main__title {
         font-size: 1.75rem;
-        
     }
 
     .title__text {
@@ -294,20 +368,23 @@ html, body {
         flex-direction: column;
     }
 
-    .column--middle {
-        margin:0;
-    }
-
     .card__item {
-        margin-bottom: 2rem;
+        padding: 2rem;
+        max-height: 16rem;
     }
 
     .card__title {
         font-size: 1.5rem;
+        margin-bottom: 0.5rem;
     }
 
     .card__item p {
-        font-size: 0.9rem;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .card__icon img{
+        width: 4rem;
     }
 
     /* Modal */
