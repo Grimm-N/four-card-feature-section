@@ -1,15 +1,11 @@
-# four-card-feature-section
-Page with 4 adaptive function cards (HTML, CSS, JS)
+# Page with 4 adaptive function cards (HTML, CSS, JS)
 
-# Frontend Mentor - Four card feature section solution
-
-This is a solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK). 
+![Web design](./screenshots/web.png)
 
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -26,12 +22,6 @@ Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - Open each card in separate modal window.
-
-### Screenshot
-
-![Mobile design 375](./screenshots/mob-375x675.png)
-![IPad design 768](./screenshots/ipad-768x1024)
-![Web design](./screenshots/web.png)
 
 ### Links
 
